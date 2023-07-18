@@ -1,0 +1,10 @@
+.select {
+  position: relative;
+}
+
+.error {
+  color: red;
+  position: absolute;
+  font-size: 12px;
+  top: 100%;
+}

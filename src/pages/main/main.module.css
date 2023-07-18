@@ -1,0 +1,37 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-width: 900px;
+  height: 80vh;
+  border-radius: 12px 12px 0px 0px;
+  background-color: rgb(255, 255, 255);
+  padding: 24px;
+  gap: 24px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 50%;
+}
+
+.next {
+  margin-top: 24px;
+}
+
+.line {
+  border: none;
+  border-top: 2px solid rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 576px) {
+  .main {
+    height: 80vmax;
+    padding: 12px;
+  }
+  .form {
+    max-width: 100%;
+  }
+}

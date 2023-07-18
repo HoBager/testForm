@@ -1,0 +1,19 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  width: 1080px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrapper {
+    padding: 0;
+  }
+}

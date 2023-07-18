@@ -1,0 +1,10 @@
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 600;
+}

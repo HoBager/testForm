@@ -1,0 +1,94 @@
+.stepper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.step:last-child {
+  align-items: end;
+}
+
+.step:first-child {
+  align-items: start;
+}
+
+.step .item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-bottom: 6px;
+  background-color: rgba(166, 166, 166, 1);
+}
+
+.step::before {
+  content: "";
+  position: absolute;
+  width: 99%;
+  height: 8px;
+  top: 4px;
+  left: 50%;
+  background-color: rgb(240, 240, 240);
+}
+
+.step::after {
+  content: "";
+  position: absolute;
+  width: 99%;
+  height: 8px;
+  top: 4px;
+  left: 100%;
+
+  background-color: rgb(240, 240, 240);
+}
+
+.step:first-child::before {
+  left: 2%;
+}
+.step:first-child::after {
+  left: 50%;
+}
+
+.step.active,
+.step.done {
+  color: rgba(85, 88, 250, 1);
+}
+
+.step.active .item,
+.step.done .item {
+  background-color: rgba(85, 88, 250, 1);
+}
+
+.step.done::after,
+.step.done::before {
+  background-color: rgba(85, 88, 250, 1);
+}
+
+.step.active .item .dot {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  line-height: 0;
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+  height: 4px;
+  width: 4px;
+}
+
+.step:last-child::after,
+.step:last-child::before {
+  content: none;
+}

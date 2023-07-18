@@ -1,0 +1,15 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 48px;
+  max-width: 300px;
+  min-height: 500px;
+  z-index: 5;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+}
