@@ -1,7 +1,7 @@
 @font-face {
   font-family: "SB Sans Interface";
-  src: url("../public\fonts\SBSansInterface-Regular.woff2") format("woff2"),
-    url("../public\fonts\SBSansInterface-Semibold.woff2") format("woff2");
+  src: url("../fonts/SBSansInterface-Regular.woff2") format("woff2"),
+    url("..fonts/SBSansInterface-Semibold.woff2") format("woff2");
 }
 
 :active,

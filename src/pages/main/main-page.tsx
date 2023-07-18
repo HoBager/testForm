@@ -28,7 +28,7 @@ const MainPage = () => {
         <hr className={styles.line} />
         <form className={styles.form}>
           <UiLabel id="name" text={"Номер телефона"}>
-            <UiInput disabled={true} id="name" value={mask("9825827167")} />
+            <UiInput disabled={true} id="name" value={mask("9825827177")} />
           </UiLabel>
           <UiLabel id="Email" text="Email">
             <UiInput
