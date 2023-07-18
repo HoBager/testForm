@@ -46,7 +46,9 @@ const SexSelect = forwardRef<any, SexSelectProps>(
               value={options.find((c) => {
                 return c.value === value;
               })}
-              onChange={(val) => onChange(val.value)}
+              onChange={(newValue) =>
+                onChange((newValue as unknown as Options).value)
+              }
               placeholder={<div>{`Не выбрано`}</div>}
             />
           )}
